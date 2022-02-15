@@ -1,0 +1,200 @@
+
+/* Start Card Buying */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.products {
+  background-color: black;
+  width: 100%;
+}
+.products h2{
+  color: white;
+  text-align: center;
+
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.product-card {
+  background-color: white;
+  border: 1px solid white;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+.product-card:hover {
+  transform: scale(1.1);
+}
+.product-card:hover .image-card {
+  opacity: 0.9;
+}
+.image-card img {
+  width: 100%;
+}
+.product-info {
+  padding: 1em;
+}
+.product-category {
+  font-size: 0.8em;
+  color: black;
+}
+.product-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+.product-title button {
+  border: 1px solid white;
+  padding: 10px;
+  background-color: orangered;
+  color: white;
+  font-size: 15px;
+  
+}
+.product-title button:hover {
+transform: scale(1.1);
+  opacity: 0.9;
+}
+ i{
+  font-size: 20px;
+  color: orangered;
+  margin-left: 7px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.done-pop-up{
+  position: fixed;
+  top: 20px;
+  right: 50%;
+  transform: translateX(50%);
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #74cccc;
+  border-radius: 12px;
+  width: 25vw;
+  text-align: center;
+  padding: 20px 0;
+transition: all .8s;
+}
+.show-items{
+  position: fixed;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 12px 8px;
+  top: 2vh;
+  right: 1vw;
+  border-radius: 7px;
+  background-color: yellow;
+  color: orangered;
+  font-size: 20px;
+}
+.black-screen{
+  background-color: #282A35;
+  position: fixed;
+  top: 0;
+  right: 0; 
+  bottom: 0;
+  left: 0;
+  transform: translateX(110vw);
+  transition: all 1s;
+}
+.black-screen #close{
+  font-size: 35px;
+    color: white;
+    opacity: 1;
+    position: absolute;
+    right: 2%;
+    top: 3%;
+}
+.black-screen #close:hover{
+  color: orangered;
+}
+.item-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  border-bottom: 4px solid rgb(109, 176, 221);
+  border-radius: 10px;
+  width: 80vw;
+  margin: 13px auto;
+  color: black;
+}
+.img-title-parent{
+  display: flex;
+  align-items: center;
+  width: 33%;
+}
+.img-title-parent img{
+  border-radius: 10px;
+  width: 75px;
+  height: auto;
+  margin: 4px 0 1px 0;
+}
+.img-title-parent p{
+  font-size: 20px;
+  margin-right: 10px;
+}
+#input-quantity{
+  width: 45px;
+  height: 36px;
+  text-align: center;
+  border: 1px solid #56ccf2;
+  border-radius: 5px;
+  margin-left: 13px;
+}
+.price{
+  padding: 7px 8px 0;
+  border-radius: 4px;
+  color: crimson;
+  font-size: 20px;
+  font-weight: 500;
+}
+.btn-delete{
+  border: 1px solid;
+  background-color: crimson;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.btn-buying-end{
+  border-radius: 10px;
+  border: 1px solid crimson;
+ width: 15vw;
+  background-color: crimson;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.confirm-buy{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.confirm-buy p{
+  margin-left: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+/* End Card Buying */

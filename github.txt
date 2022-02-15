@@ -1,0 +1,7 @@
+switch the master branch to main with the command:
+
+git branch -m master main
+===============================================
+default branch to main
+
+git config --global init.defaultBranch main
